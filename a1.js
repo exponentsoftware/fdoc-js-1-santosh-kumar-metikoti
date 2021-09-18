@@ -3,8 +3,7 @@ const paragraph =
 
 function countWords(paragraph, word1, word2) {
   let temp = paragraph.split(" ");
-  let first_word_count = 0,
-    scond_word_count = 0;
+  let first_word_count = 0, scond_word_count = 0;
 
   for (let i of temp) {
     if (word1.toLowerCase() == i.toLowerCase()) {
@@ -16,7 +15,8 @@ function countWords(paragraph, word1, word2) {
   }
   if (first_word_count >= scond_word_count) {
     return "The word "+word1+" appears more frequently than "+word2;
-  } else {
+  } 
+  else {
     return "The word "+word2+" more frequently occurred than "+word1;
   }
 }
